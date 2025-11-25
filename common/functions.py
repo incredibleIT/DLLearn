@@ -22,6 +22,9 @@ def softmax(x):
         x = x - np.max(x)
         return np.exp(x) / np.sum(np.exp(x))
 
+def identity(x):
+    return x
+
 if __name__ == '__main__':
     x = np.array([0, 1, 2, 3, 4, 5, -1, -2, -3, -4, -5])
     print(step_function(x))
